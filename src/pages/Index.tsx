@@ -18,7 +18,7 @@ export default function Index() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-2xl font-roboto font-bold text-primary">
-              ОфисМебель
+              КроватиДом
             </div>
             <div className="hidden md:flex space-x-8">
               <button 
@@ -65,14 +65,14 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <h1 className="text-5xl lg:text-6xl font-roboto font-bold text-primary leading-tight">
-                Офисная мебель
+                Кровати
                 <span className="block text-muted-foreground text-3xl lg:text-4xl font-light">
-                  нового поколения
+                  для идеального сна
                 </span>
               </h1>
               <p className="text-xl font-open text-muted-foreground leading-relaxed">
-                Создаем эргономичные рабочие места, которые вдохновляют на продуктивность. 
-                Минималистичный дизайн, премиальные материалы, индивидуальный подход.
+                Создаем комфортные кровати для здорового и качественного сна. 
+                Ортопедические матрасы, натуральные материалы, индивидуальный дизайн.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
@@ -94,8 +94,8 @@ export default function Index() {
             </div>
             <div className="relative">
               <img 
-                src="/img/1507a741-02c5-4ecb-8765-99ca8fe4273e.jpg" 
-                alt="Современная офисная мебель"
+                src="/img/e5d5879f-9d20-4e2c-8646-e7ce2ed527e6.jpg" 
+                alt="Современные кровати"
                 className="w-full h-auto rounded-lg shadow-2xl"
               />
             </div>
@@ -108,50 +108,50 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-roboto font-bold text-primary mb-4">
-              Каталог мебели
+              Каталог кроватей
             </h2>
             <p className="text-lg font-open text-muted-foreground max-w-2xl mx-auto">
-              Полный спектр офисной мебели: от рабочих столов до систем хранения
+              Полная коллекция кроватей: односпальные, двуспальные, с мягким изголовьем
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { 
-                title: 'Рабочие столы', 
-                description: 'Эргономичные столы для максимальной продуктивности',
-                icon: 'Laptop',
-                items: ['Регулируемые по высоте', 'Встроенная подсветка', 'Кабель-менеджмент']
-              },
-              { 
-                title: 'Офисные стулья', 
-                description: 'Комфорт и поддержка для долгой работы',
-                icon: 'Armchair',
-                items: ['Ортопедическая спинка', 'Мембранные материалы', 'Регулировка под рост']
-              },
-              { 
-                title: 'Системы хранения', 
-                description: 'Организация пространства без лишних деталей',
-                icon: 'Archive',
-                items: ['Модульные шкафы', 'Скрытые механизмы', 'Безопасные замки']
-              },
-              { 
-                title: 'Переговорные', 
-                description: 'Мебель для встреч и коллективной работы',
-                icon: 'Users',
-                items: ['Конференц-столы', 'Медиа-оборудование', 'Акустические панели']
-              },
-              { 
-                title: 'Кровати', 
-                description: 'Комфортная мебель для отдыха',
+                title: 'Односпальные кровати', 
+                description: 'Компактные решения для маленьких спален',
                 icon: 'Bed',
-                items: ['Ортопедические матрасы', 'Регулируемые основания', 'Экологичные материалы']
+                items: ['Размер 90x200 см', 'Ортопедическое основание', 'Мягкое изголовье']
               },
               { 
-                title: 'Тумбочки', 
-                description: 'Практичные решения для хранения',
-                icon: 'Package',
-                items: ['Выдвижные ящики', 'Скрытые отделения', 'Беспроводная зарядка']
+                title: 'Двуспальные кровати', 
+                description: 'Просторные модели для пар',
+                icon: 'Bed',
+                items: ['Размер 160x200 см', 'Независимые матрасы', 'Комфортное изголовье']
+              },
+              { 
+                title: 'Кровати-подиумы', 
+                description: 'Современные модели без ножек',
+                icon: 'Bed',
+                items: ['Минималистичный дизайн', 'Встроенное освещение', 'Мягкая обивка']
+              },
+              { 
+                title: 'Кровати с ящиками', 
+                description: 'Функциональные модели с хранением',
+                icon: 'Archive',
+                items: ['Выдвижные ящики', 'Максимум хранения', 'Плавное открывание']
+              },
+              { 
+                title: 'Детские кровати', 
+                description: 'Безопасные модели для детей',
+                icon: 'Baby',
+                items: ['Экологичные материалы', 'Защитные бортики', 'Яркие цвета']
+              },
+              { 
+                title: 'Матрасы и основания', 
+                description: 'Ортопедические решения для сна',
+                icon: 'Layers',
+                items: ['Пружинные блоки', 'Память формы', 'Гипоаллергенные материалы']
               }
             ].map((category, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
@@ -196,10 +196,10 @@ export default function Index() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: 'Дизайн-проект', icon: 'Palette', description: '3D визуализация вашего офиса' },
-              { title: 'Производство', icon: 'Wrench', description: 'Изготовление под ваши требования' },
-              { title: 'Доставка', icon: 'Truck', description: 'Бережная транспортировка' },
-              { title: 'Монтаж', icon: 'Settings', description: 'Профессиональная установка' }
+              { title: 'Консультация', icon: 'MessageCircle', description: 'Подберем идеальную кровать' },
+              { title: 'Производство', icon: 'Wrench', description: 'Индивидуальный размер и дизайн' },
+              { title: 'Доставка', icon: 'Truck', description: 'Бесплатная доставка по городу' },
+              { title: 'Сборка', icon: 'Settings', description: 'Профессиональная сборка кровати' }
             ].map((service, index) => (
               <div key={index} className="text-center">
                 <div className="p-4 bg-white rounded-full w-20 h-20 mx-auto mb-4 flex items-center justify-center shadow-md">
@@ -241,14 +241,14 @@ export default function Index() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-lg font-roboto font-semibold text-primary mb-2">
-                    Офис IT-компании {item}
+                    Спальня семьи {item === 1 ? 'Петровых' : item === 2 ? 'Сидоровых' : 'Ивановых'}
                   </h3>
                   <p className="font-open text-muted-foreground text-sm mb-4">
-                    Современное рабочее пространство для {20 + item * 10} сотрудников
+                    Комфортная спальня с ортопедическим матрасом и мягким изголовьем
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="font-open text-xs text-muted-foreground">
-                      Срок: {2 + item} недели
+                      Материал: {item === 1 ? 'Дуб' : item === 2 ? 'Сосна' : 'Бук'}
                     </span>
                     <Button variant="ghost" size="sm" className="font-open">
                       Подробнее
@@ -280,7 +280,7 @@ export default function Index() {
                 </div>
                 <div className="flex items-center">
                   <Icon name="Mail" size={20} className="mr-4" />
-                  <span className="font-open">info@officemebel.ru</span>
+                  <span className="font-open">info@krovatim.ru</span>
                 </div>
                 <div className="flex items-center">
                   <Icon name="MapPin" size={20} className="mr-4" />
@@ -329,7 +329,7 @@ export default function Index() {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-lg font-roboto font-bold text-white mb-4 md:mb-0">
-              ОфисМебель
+              КроватиДом
             </div>
             <div className="flex space-x-6">
               <button className="hover:text-white transition-colors font-open text-sm">
@@ -342,7 +342,7 @@ export default function Index() {
           </div>
           <div className="text-center mt-4 pt-4 border-t border-white/10">
             <p className="font-open text-sm">
-              © 2024 ОфисМебель. Все права защищены.
+              © 2024 КроватиДом. Все права защищены.
             </p>
           </div>
         </div>
